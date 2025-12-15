@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Noto Sans", sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar-starbucks{
+    background-color: #006241;
+}
+
+.navbar-starbucks .nav-link{
+    color: #ffffff;
+}
+
+.navbar-starbucks .nav-link:hover{
+    color: #cceae1;
+}
+
+
+
+/* CARRUSEL */
+#carouselStarbucks{
+    margin-top: 55px;
+}
+.img-carrusel{
+    height: 500px;
+    object-fit: cover;
+}
+
+/* TITULO */
+.titulo-principal{
+    font-weight: bold;
+    color: #006241;
+}
+
+/* ICONOS */
+.icono{
+    width: 80px;
+}
+
+/* CARDS */
+.card{
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    padding: 30px 25px;
+    min-height: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(45deg, #036635, #1E3A31); 
+}
+.card h5{
+    color: white;
+}
+.card p{
+    color: white;
+}
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+.icono{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/*PIE DE PAGINA*/
+#piepagina{
+    text-align: center;
+    background-color: #1E3A31;
+    color: white;
+}
+footer{
+    font-size: 1.0rem;
+    transition: 0.3s;
+    margin-bottom: 0;
+    padding: 10px 10px;
+}
+footer p{
+    
+    margin-top: 1%;
+    font-size: small;
+}
+
+.redes ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    top: 0;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.redes ul li a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    display: block;
+    margin: 1px;
+    padding: 5px;
+    height: 30px;
+    text-align: center;
+    align-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease; 
+}
+.redes ul li a:hover{
+    background-color: #5c5c5c; 
+    transform: translateY(2px) scale(0.95); 
+    filter: brightness(1.1);
+}
+
+/*BLOG*/
+.blog-header {
+    margin-top: 90px;
+}
+
+.blog-titulo {
+    color: #006241;
+    font-weight: 700;
+}
+
+.blog-subtitulo {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* POSTS */
+.blog-post {
+    border-radius: 18px;
+    overflow: hidden;
+    background: linear-gradient(180deg, #0b3d2e, #0f5132);
+}
+
+.blog-img {
+    width: 100%;
+    height: 180px;         
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.blog-post-titulo {
+    color: #1e3932;
+    font-weight: 600;
+}
+
+.blog-fecha {
+    font-size: 0.8rem;
+    color: #777;
+}
+.blog-post .row {
+    align-items: center;
+}
+/* BOTÓN BLOG */
+.btn-blog {
+    background-color: #f1f8f5;   /* verde muy claro */
+    color: #006241;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 12px 26px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 18px;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.btn-blog:hover {
+    background-color: #006241;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+/* SIDEBAR */
+.blog-sidebar .blog-widget {
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.blog-sidebar h5 {
+    color: white;
+    margin-bottom: 10px;
+}
+.blog-widget-titulo {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .blog-img-box {
+        height: 200px;
+    }
+}
+
+.blog-img-box {
+    width: 100%;
+    height: 220px;          
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+
+.blog-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      
+    display: block;
+}
+
+/* PAGINACIÓN BLOG */
+.blog-paginacion {
+    margin-bottom: 40px;
+}
+
+.pagination .page-link {
+    color: #006241;
+    border-radius: 50px;
+    margin: 0 5px;
+}
+
+.pagination .active .page-link {
+    background-color: #006241;
+    border-color: #006241;
+    color: white;
+}
+
+/* NOTICIAS */
+.noticias-wrapper {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.noticias-titulo {
+    color: #006241;
+    font-weight: 800;
+}
+
+.noticias-subtitulo {
+    color: #555;
+    font-size: 1rem;
+}
+
+.noticias-bloque-titulo {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1e3932;
+}
+
+/* TABS */
+.noticias-tabs .nav-link {
+    color: #006241;
+    font-weight: 600;
+}
+
+.noticias-tabs .nav-link.active {
+    background-color: #006241;
+    color: white;
+}
+
+.noticias-tabs-content {
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+}
+
+/* ALERTAS */
+.noticias-alerta {
+    border-radius: 12px;
+    font-size: 0.95rem;
+}
+
+/* ACORDEÓN */
+.noticias-acordeon .accordion-button {
+    font-weight: 600;
+    color: #006241;
+}
+
+.noticias-acordeon .accordion-button:not(.collapsed) {
+    background-color: #e8f5f0;
+    color: #006241;
+}
+
+.noticias-acordeon .accordion-item {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.noticias-body #piepagina {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* TIENDA*/
+#tienda {
+    margin-top: 120px;
+    margin-bottom: 80px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#tienda .tienda-header h1 {
+    color: #1e3932;
+}
+
+#tienda .tienda-tabs .nav-link {
+    color: #1e3932;
+    font-weight: 600;
+}
+
+#tienda .tienda-tabs .nav-link.active {
+    background-color: #1e3932;
+    color: #fff;
+}
+
+#tienda .tienda-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+#tienda .tienda-card:hover {
+    transform: translateY(-5px);
+}
+
+#tienda .tienda-card img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+#tienda .tienda-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.75rem;
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+#tienda h5 {
+    font-weight: 700;
+}
+#tienda h4{
+    color: white;
+}
+#tienda p{
+    text-align: justify;
+}
+#tienda .btn-success {
+    background-color: #1e3932;
+    border: none;
+}
+
+#tienda .btn-success:hover {
+    background-color: #155c4a;
+}

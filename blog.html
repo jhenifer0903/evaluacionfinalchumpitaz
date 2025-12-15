@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="shortcut icon" href="IMAGEN/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-starbucks">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">STARBUCKS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Más</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Nosotros</a></li>
+                                <li><a class="dropdown-item" href="#">Contacto</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </nav>
+    <!-- HEADER BLOG -->
+     <header class="blog-header text-center">
+        <div class="container">
+            <h1 class="blog-titulo">Nuestro Blog Starbucks</h1>
+            <p class="blog-subtitulo">Historias, café y momentos que nos conectan</p>
+        </div>
+    </header>
+    <!-- CONTENIDO -->
+    <main class="container blog-contenido my-5">
+        <div class="row g-4">
+            <!-- POSTS -->
+            <section class="col-lg-8 blog-posts">
+                <!-- POST -->
+                <article class="card blog-post mb-4">
+                    <div class="row g-0">
+                        <div class="blog-img-box">
+                            <img src="IMAGEN/bloog 1.jpg" class="blog-img" alt="">
+                        </div>
+                        <div class="col-md-7 p-4">
+                            <h5 class="blog-post-titulo">El arte detrás de una taza de café</h5>
+                            <p class="blog-fecha">Publicado el 10 de Octubre, 2025</p>
+                            <p>Descubre cómo Starbucks selecciona y tuesta sus granos para lograr el sabor perfecto.</p>
+                            <a href="#" class="btn-blog">Leer artículo completo</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card blog-post mb-4">
+                    <div class="row g-0">
+                        <div class="blog-img-box">
+                            <img src="IMAGEN/bloog 2.jpg" class="blog-img" alt="">
+                        </div>
+                        <div class="col-md-7 p-4">
+                            <h5 class="blog-post-titulo">Bebidas de temporada</h5>
+                            <p class="blog-fecha">Publicado el 1 de Diciembre, 2025</p>
+                            <p>Sabores únicos que hacen especial cada temporada del año.</p>
+                            <a href="#" class="btn-blog">Leer artículo completo</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card blog-post mb-4">
+                    <div class="row g-0">
+                        <div class="blog-img-box">
+                            <img src="IMAGEN/bloog 3.jpg" class="blog-img" alt="">
+                        </div>
+                        <div class="col-md-7 p-4">
+                            <h5 class="blog-post-titulo">Momentos Starbucks</h5>
+                            <p class="blog-fecha">Publicado el 01 de Noviembre, 2025</p>
+                            <p>Historias de personas que encuentran en Starbucks un lugar para compartir.</p>
+                            <a href="#" class="btn-blog">Leer artículo completo</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <!-- SIDEBAR -->
+            <aside class="col-lg-3 blog-sidebar">
+                <div class="card blog-widget mb-4">
+                    <h5 class="blog-widget-titulo">Categorías</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Café y origen</li>
+                        <li class="list-group-item">Bebidas especiales</li>
+                        <li class="list-group-item">Estilo de vida</li>
+                        <li class="list-group-item">Comunidad</li>
+                    </ul>
+                </div>
+                <div class="card blog-widget">
+                    <h5 class="blog-widget-titulo">Sobre Starbucks</h5>
+                    <p>Starbucks se dedica a ofrecer café de origen responsable, fomentando la conexión humana y creando espacios donde cada persona puede disfrutar y compartir momentos especiales. <br> <br> Una empresa internacional reconocida por su compromiso con el café de calidad, la sostenibilidad y la creación de espacios acogedores que promueven la conexión y la comunidad.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <nav class="blog-paginacion">
+    <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+            <a class="page-link">Anterior</a>
+        </li>
+        <li class="page-item active">
+            <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">Siguiente</a>
+        </li>
+    </ul>
+</nav>
+
+    <footer id="piepagina">
+      <p>Copyrigth 2025 - Todos los derechos reservados <br>Av. Paseo de la República 144, Lima 15001</p> 
+      <p>Síguenos en nuestras redes sociales:</p>
+      <div class="redes">
+        <ul>
+          <div><li><a href="https://x.com/starbucksperu/with_replies" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li></div>
+          <div><li><a href="https://www.facebook.com/starbucksperu/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li></div>
+          <div><li><a href="https://www.instagram.com/starbuckspe" target="_blank"><i class="fa-brands fa-instagram"></i></a></li></div>
+          <div><li><a href="https://www.tiktok.com/@starbucks.peru" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li></div>
+        </ul>
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
