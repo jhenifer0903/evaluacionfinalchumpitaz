@@ -17,20 +17,20 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-starbucks">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">STARBUCKS</a>
+            <a class="navbar-brand fw-bold" href="#"><h2><strong>Starbucks</strong></h2></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
             <span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="tienda.html">Tienda</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Más</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Nosotros</a></li>
-                                <li><a class="dropdown-item" href="#">Contacto</a></li>
+                                <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                                <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -39,13 +39,13 @@
     </nav>
     <main id="tienda" class="container tienda-contenido">
 
-    <!-- TÍTULO -->
+    
     <header class="text-center mb-4 tienda-header">
         <h1 class="fw-bold">Nuestra Tienda</h1>
-        <p class="text-muted">Descubre nuestros productos Starbucks</p>
+        <h5 class="tienda-subtitulo text-muted text-center">Descubre nuestros productos Starbucks</h5>
     </header>
 
-    <!-- TABS -->
+    
     <ul class="nav nav-tabs justify-content-center tienda-tabs mb-4" id="tiendaTabs" role="tablist">
         <li class="nav-item">
             <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#bebidas" type="button">
@@ -64,21 +64,21 @@
         </li>
     </ul>
 
-    <!-- CONTENIDO DE TABS -->
+    
     <div class="tab-content">
 
-        <!-- ===== BEBIDAS ===== -->
+       
         <div class="tab-pane fade show active" id="bebidas">
-            <h5 class="mb-3 text-success">Categoría: Bebidas</h5>
+            <h5 class="mb-3 text-success"><strong>Categoría:</strong> Bebidas</h5>
 
             <div class="row g-4">
-                <!-- CARD -->
+                
                 <div class="col-md-4">
                     <div class="card tienda-card h-100">
                         <span class="badge bg-success tienda-badge">Nuevo</span>
                         <img src="IMAGEN/bebida 1.png" class="card-img-top img-fluid" alt="Frappuccino">
                         <div class="card-body">
-                            <h4 class="card-title">Red Velvet Cake Latte</h4>
+                            <h4 class="card-title"><strong>Red Velvet Cake Latte</strong></h4>
                             <p class="card-text">¡La gran novedad! Una deliciosa combinación de café espresso, sirope de Red Velvet y leche vaporizada, cubierta de nata y topping de Red Velvet.Prueba sus versiones Hot, Iced y Frappuccino.</p>
                             <button class="btn btn-success btn-sm" data-bs-toggle="tooltip" title="Ver detalles">
                                 Ver detalles
@@ -87,25 +87,25 @@
                     </div>
                 </div>
 
-                <!-- CARD -->
+                
                 <div class="col-md-4">
                     <div class="card tienda-card h-100">
                         <span class="badge bg-danger tienda-badge">-15%</span>
                         <img src="IMAGEN/bebida 2.jpg" class="card-img-top img-fluid" alt="Latte">
                         <div class="card-body">
-                            <h4 class="card-title">Toffee Nut Latte</h4>
+                            <h4 class="card-title"><strong>Toffee Nut Latte</strong></h4>
                             <p class="card-text">Una increíble combinación de café con sirope de Toffee, nueces y leche vaporizada, cubierta con nata y topping de Toffee Nut. ¿Qué versión probarás primero: Hot, Iced o Frappuccino.</p>
                             <button class="btn btn-success btn-sm">Ver detalles</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- CARD -->
+                
                 <div class="col-md-4">
                     <div class="card tienda-card h-100">
                         <img src="IMAGEN/bebida 3.jpg" class="card-img-top img-fluid" alt="Capuchino">
                         <div class="card-body">
-                            <h4 class="card-title">Gingerbread Latte</h4>
+                            <h4 class="card-title"><strong>Gingerbread Latte</strong></h4>
                             <p class="card-text">Una navideña combinación de café con sirope de jengibre y leche al vapor, cubierta de nata infusionada con jengibre y terminada con una cobertura de canela. Disfruta de ella en versión Hot, Iced y Frappuccino.</p>
                             <button class="btn btn-success btn-sm">Ver detalles</button>
                         </div>
@@ -114,16 +114,15 @@
             </div>
         </div>
 
-        <!-- ===== CAFÉ ===== -->
         <div class="tab-pane fade" id="cafe">
-            <h5 class="mb-3 text-success">Categoría: Café</h5>
+            <h5 class="mb-3 text-success"><strong>Categoría:</strong> Café</h5>
 
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card tienda-card h-100">
                         <img src="IMAGEN/cafe 1.jpg" class="card-img-top img-fluid" alt="Café oscuro">
                         <div class="card-body">
-                            <h4 class="card-title">Macchiato</h4>
+                            <h4 class="card-title"><strong>Macchiato</strong></h4>
                             <p class="card-text">Shot de espresso con un toque ligero de leche finalizado con una cucharada de leche vaporizada.</p>
                             <button class="btn btn-outline-success btn-sm">Ver especificaciones</button>
                         </div>
@@ -134,7 +133,7 @@
                     <div class="card tienda-card h-100">
                         <img src="IMAGEN/cafe 2.jpg" class="card-img-top img-fluid" alt="Café medio">
                         <div class="card-body">
-                            <h4 class="card-title">Frappuccino Café</h4>
+                            <h4 class="card-title"><strong>Frappuccino Café</strong></h4>
                             <p class="card-text">Base de café Starbucks espresso y leche, mezclado con hielo. Todo ello batido y bien frío.</p>
                             <button class="btn btn-outline-success btn-sm">Ver especificaciones</button>
                         </div>
@@ -145,7 +144,7 @@
                     <div class="card tienda-card h-100">
                         <img src="IMAGEN/cafe 3.jpg" class="card-img-top img-fluid" alt="Café claro">
                         <div class="card-body">
-                            <h4 class="card-title">Americano</h4>
+                            <h4 class="card-title"><strong>Americano</strong></h4>
                             <p class="card-text">Intenso espresso con agua caliente..</p>
                             <button class="btn btn-outline-success btn-sm">Ver especificaciones</button>
                         </div>
@@ -154,16 +153,15 @@
             </div>
         </div>
 
-        <!-- ===== MERCH ===== -->
         <div class="tab-pane fade" id="merch">
-            <h5 class="mb-3 text-success">Categoría: Merchandising</h5>
+            <h5 class="mb-3 text-success"><strong>Categoría:</strong> Merchandising</h5>
 
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card tienda-card h-100">
                         <img src="IMAGEN/merch 1.jpg" class="card-img-top img-fluid" alt="Taza Starbucks">
                         <div class="card-body">
-                            <h4 class="card-title">Vaso Reutilizable</h4>
+                            <h4 class="card-title"><strong>Vaso Reutilizable</strong></h4>
                             <p class="card-text">Nuestro famoso vaso reutilizable. <br>Reduce, reutiliza y recicla.</p>
                             <button class="btn btn-success btn-sm">Comprar</button>
                         </div>
@@ -174,7 +172,7 @@
                     <div class="card tienda-card h-100">
                         <img src="IMAGEN/merch 2.jpg" class="card-img-top img-fluid" alt="Vaso térmico">
                         <div class="card-body">
-                            <h4 class="card-title">Circular Cup</h4>
+                            <h4 class="card-title"><strong>Circular Cup</strong></h4>
                             <p class="card-text">Nuestro vaso hecho con vasos reciclados. <br>¡Cómpralo en tu Starbucks® shop más cercana!</p>
                             <button class="btn btn-success btn-sm">Comprar</button>
                         </div>
@@ -185,7 +183,7 @@
                     <div class="card tienda-card h-100">
                         <img src="IMAGEN/merch 3.jpg" class="card-img-top img-fluid" alt="Botella Starbucks">
                         <div class="card-body">
-                            <h4 class="card-title">Taza Siren Stone gris</h4>
+                            <h4 class="card-title"><strong>Taza Siren Stone gris</strong></h4>
                             <p class="card-text">Estas tazas de Starbucks® están disponibles en diferentes tamaños short, tall, grande.</p>
                             <button class="btn btn-success btn-sm">Comprar</button>
                         </div>
@@ -211,5 +209,10 @@
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  tooltipTriggerList.forEach(t => new bootstrap.Tooltip(t))
+</script>
 </body>
+
 </html>
