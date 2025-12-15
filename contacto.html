@@ -17,27 +17,152 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-starbucks">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">STARBUCKS</a>
+            <a class="navbar-brand fw-bold" href="#"><h2><strong>Starbucks</strong></h2></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
             <span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Más</a>
+                            <a class="nav-link dropdown-toggle dropdown-item active" data-bs-toggle="dropdown" href="#">Más</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Nosotros</a></li>
-                                <li><a class="dropdown-item" href="#">Contacto</a></li>
+                                <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                                <li><a class="dropdown-item active" href="contacto.html">Contacto</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
         </div>
     </nav>
+    <main id="contacto" class="container contacto-contenido">
 
+    <header class="text-center mb-5 contacto-header">
+        <h1 class="fw-bold">Formulario de Contacto</h1>
+        <h5 class="contacto-subtitulo text-muted">Estamos aquí para ayudarte</h5>
+    </header>
+
+    <div class="row g-4">
+
+        <section class="col-md-6">
+
+            <div class="alert alert-success d-flex align-items-center contacto-alerta">
+                <i class="fa-solid fa-circle-info me-2"></i>
+                Atención: Usa este formulario para consultas no urgentes.
+            </div>
+
+            <form class="card p-4 contacto-form">
+
+                <div class="mb-3">
+                    <label class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" placeholder="Ingresa nombres y apellidos">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" placeholder="correo@ejemplo.com">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Motivo de la consulta</label>
+                    <select class="form-select">
+                        <option selected>Selecciona un motivo</option>
+                        <option>Atención al cliente</option>
+                        <option>Pedidos</option>
+                        <option>Sugerencias</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Adjuntar documento (opcional)</label>
+                    <input type="file" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Califica tu experiencia de navegacio del 1 al 5</label>
+                    <input type="range" class="form-range" min="1" max="5">
+                </div>
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="politica">
+                    <label class="form-check-label" for="politica">
+                        Confirmo que he leído la política de privacidad
+                    </label>
+                </div>
+
+                <button type="button"
+                        class="btn btn-success w-100"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalExito">
+                    <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje
+                </button>
+
+            </form>
+        </section>
+
+        <section class="col-md-6">
+
+            <h5 class="mb-3">Horarios de Atención</h5>
+
+            <table class="table table-bordered table-hover contacto-tabla">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes - Viernes</td>
+                        <td>9:00 - 18:00</td>
+                        <td class="text-success fw-bold">Abierto</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>9:00 - 12:00</td>
+                        <td class="text-warning fw-bold">Medio día</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>Cerrado</td>
+                        <td class="text-danger fw-bold">Cerrado</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h5 class="mt-4 mb-2">Ubicación</h5>
+
+            <div class="ratio ratio-16x9 contacto-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62439.78182358584!2d-77.1218804895009!3d-12.010000946748006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sstarbucks!5e0!3m2!1ses!2spe!4v1762917073162!5m2!1ses!2spe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>
+    </div>
+</main>
+
+<div class="modal fade" id="modalExito" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title">¡Éxito!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                Tu mensaje ha sido recibido. Te responderemos a la brevedad.
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
     <footer id="piepagina">
       <p>Copyrigth 2025 - Todos los derechos reservados <br>Av. Paseo de la República 144, Lima 15001</p> 
       <p>Síguenos en nuestras redes sociales:</p>
